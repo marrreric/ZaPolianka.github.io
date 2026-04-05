@@ -1,0 +1,226 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.current-page-link {
+    pointer-events: none;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    background: #fafafa;
+    color: #333;
+}
+
+main {
+    padding: 30px 40px 60px;
+    margin-top: 150px;
+}
+
+/* шапка и навигация*/
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    padding: 10px 40px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.logo-img {
+    height: 120px;
+    width: auto;
+    display: block;
+}
+
+.top-nav {
+    flex: 1;
+}
+
+.top-nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.top-nav a:hover {
+    text-decoration: underline;
+}
+
+/* контакт в навигации*/
+.nav-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.nav-contacts-sub {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    line-height: 1;
+    opacity: 0.85;
+}
+
+.nav-contacts-sub a {
+    color: #8A5F00;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nav-contacts-sub a:hover {
+    color: #C28A00;
+}
+
+/* кнопки*/
+.btn {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 10px;
+    background: #F4C542;
+    color: #2B1C00;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    transition: 0.2s ease;
+}
+
+.btn:hover {
+    background: #C28A00;
+    color: #fff;
+}
+
+/* общий стиль карточек*/
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    flex: 1 1 280px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+    border: 1px solid #f0e6cc;
+    transition: transform .2s ease, box-shadow .2s ease;
+
+    padding: 25px 40px;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.10);
+}
+
+.card a {
+    font-weight: 600;
+    color: #C28A00;
+    text-decoration: none;
+}
+
+.card a:hover {
+    color: #8A5F00;
+    text-decoration: none;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+/* маленькие блоки */
+.news-date {
+    color: #C28A00;
+    font-weight: 600;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+/* подвал */
+.site-footer {
+    border-top: 1px solid #ddd;
+    padding: 15px 40px;
+    background: #fff;
+    text-align: center;
+}
+
+.bottom-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 5px;
+}
+
+.bottom-nav a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+}
+
+.bottom-nav a:hover {
+    text-decoration: underline;
+}
+
+.footer-contacts {
+    margin: 8px 0;
+}
+
+.footer-contacts a {
+    color: #8A5F00;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.footer-contacts a:hover {
+    color: #C28A00;
+    text-decoration: underline;
+}
+
+.footer-social {
+    margin: 10px 0;
+}
+
+.footer-social img {
+    width: 28px;
+    height: 28px;
+    opacity: 0.8;
+    transition: 0.2s ease;
+}
+
+.footer-social img:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
